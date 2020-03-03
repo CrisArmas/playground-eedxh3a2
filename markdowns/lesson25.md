@@ -60,7 +60,7 @@ int main(){
 ---
 ATENÇÃO
 ---
-O comando <b>scanf</b> não lê o caracter <b>Enter('\0')</b>, portanto em variáveis do <b>tipo char</b> esse caracter é lido no comando <b>scanf</b> seguinte. Logo, em comandos de leitura de variáveis do tipo char, coloque a função <b>getchar()</b> ou <b>fflush(stdin)</b> após o commando <b>scanf</b>, para solucionar o problema. A função <b>fflush(stdin)</b> limpa o buffer do teclado. Veja o exemplo abaixo:
+O comando <b>scanf</b> não lê o caracter <b>Enter('\0')</b>, portanto em variáveis do <b>tipo char</b> esse caracter é lido no comando <b>scanf</b> seguinte. Logo, em comandos de leitura de variáveis do tipo char, coloque a função <b>getchar()</b> ou <b>fflush(stdin)</b> (biblioteca stdlib.h) após o commando <b>scanf</b>, para solucionar o problema. A função <b>fflush(stdin)</b> limpa o buffer do teclado. Veja o exemplo abaixo:
 ```C
 #include<stdio.h>
 int main(){
@@ -70,8 +70,7 @@ int i;
 for (i=0; i<10;i++){
     printf("\nentra:");
     scanf("%c",&vet[i]);
-    getchar();   // <----- Comente esse comando e veja o que acontece
-
+    fflush(stdin); //Usar essa função ou a função getchar()
 }
 for (i=0; i<10;i++){
     printf("\nvet=:%c", vet[i]);
