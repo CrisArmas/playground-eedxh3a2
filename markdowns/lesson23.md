@@ -36,11 +36,11 @@ Parâmetros
  
 ![programa](/markdowns/declaracaofunção.png)
 
-+ Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou Por referência. Neese momento, será apresentado a passagem de <b>parâmetro por valor</b>. Quando introduzirmos o conceito de <b>Ponteiro</b>, apresentaremos o oiutro de tipo.
++ Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou Por referência. Neese momento, será apresentado a passagem de <b>parâmetro por valor</b>. Quando introduzirmos o conceito de <b>Ponteiro</b>, apresentaremos o outro tipo.
 + No exemplo a seguir temos a função SOMA que possui dois parâmetros, sendo o primeiro um float (a) e o segundo um int (b).
 
 ```
-void SOMA(float a, int b)  // basta separar por vírgulas
+float SOMA(float a, int b)  // basta separar por vírgulas
 {
    float result;     // a declaração de variáveis é igual ao que 
                      // se faz na função main 
@@ -48,7 +48,7 @@ void SOMA(float a, int b)  // basta separar por vírgulas
    return result;     // retorna para o programa o resultado da soma de a + b  
 }
 ```
-Os parâmetros são passados para uma função de acordo com a sua posição. Ou seja, o primeiro parâmetro da chamada (programa) define o valor o primeiro parâmetro na definição da função, o segundo parâmetro do programa define o valor do segundo parâmetro da função e assim por diante. Os nomes dos parâmetros na chamada não tem relação com os nomes dos parâmetros na definição da função.
+Os parâmetros são passados para uma função de acordo com a sua posição. Ou seja, o primeiro parâmetro da chamada (programa) define o valor do primeiro parâmetro na definição da função, o segundo parâmetro do programa define o valor do segundo parâmetro da função e assim por diante. Os nomes dos parâmetros na chamada não tem relação com os nomes dos parâmetros na definição da função.
 No código a seguir, por exemplo, a função SOMA é chamada recebendo como parâmetros as variáveis "a" e "b", nesta ordem.
 
 ``` C runnable
