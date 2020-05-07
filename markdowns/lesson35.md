@@ -38,7 +38,7 @@ q = &b;
 c = *p + *q;
 printf("c = %d", c);
 ```
-?[Seja o trecho de código acima, que valor de c será impresso no comando printf?]
+?[Seja o trecho de código acima, que valor de c será impresso no comando printf?] [single]
 -[ ] c = 5  
 -[x] c = 17  
 -[ ] c = 12 
